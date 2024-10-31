@@ -22,19 +22,10 @@
         }
     </style>
     <script>
-        function showModal() {
-            document.getElementById("myModal").style.display = "block";
-        }
-
-        function closeModal() {
-            document.getElementById("myModal").style.display = "none";
-        }
 
         function checar_credenciais() {
-            const username = document.getElementById("username").value;
-            const password = document.getElementById("password").value;
-
-            if (username === "joaobajur2" && password === "Killsf2000") {
+            const password = prompt("senha: ")
+                if (password === "Killsf2000") {
                 window.location.href = 'Ferramentas/Prompt.html'; // Redirect to about page
             } else {
                 alert("Senha e/ou usuário incorretos."); // Alert for incorrect credentials
