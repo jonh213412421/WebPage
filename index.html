@@ -31,22 +31,6 @@
                 alert("Senha e/ou usuário incorretos."); // Alert for incorrect credentials
             }
         }
-
-        // Close the modal if the user clicks outside of it
-        window.onclick = function(event) {
-            const modal = document.getElementById("myModal");
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-        function checar_senha(link) {
-        const senha = prompt("Senha: ")
-        if (senha === "Heartsofiron2") {
-                window.location.href = link
-            } else {
-                alert("senha incorreta")
-            }
-        }
     </script>
 </head>
 <body>
