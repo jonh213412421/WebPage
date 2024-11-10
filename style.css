@@ -20,9 +20,9 @@ body {
 
 .subtitulo {
     font: Poppins;
+    text-decoration: underline;
     text-align: center;
     font-size: 35px;
-    text-decoration: underline;
 }
 
 .explicacao {
@@ -57,13 +57,13 @@ body {
     background: linear-gradient(45deg, lightgreen, lightblue);
 }
 
-.container-topo .box-container-topo .box-topo:hover {
-    transform: translateY(-10px);
+.container-topo .box-container-topo .box-topo {
+    opacity: 0.75;
 }
 
-.sobre:hover {
-    transform: translateY(-15px);
-    font-color: black;
+.container-topo .box-container-topo .box-topo:hover {
+    transform: translateY(-10px);
+    opacity: 1 !important;
 }
 
 body {
@@ -146,10 +146,12 @@ iframe {
     padding: 30px 20px;
     background: linear-gradient(45deg, lightgreen, lightblue);
     margin-bottom: 10px;
+    opacity: 0.75;
 }
 
 .container .box-container .box:hover {
     transform: translateY(-11px);
+    opacity: 1 !important;
 }
 
 .container .box-container .box .box-titulo {
@@ -157,5 +159,6 @@ iframe {
 }
 
 .container .box-container .box .box-titulo:hover {
+    opacity: 1 !important;
     color: #0a65c1;
 }
