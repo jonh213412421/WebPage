@@ -22,6 +22,7 @@ body {
     font: Poppins;
     text-align: center;
     font-size: 35px;
+    text-decoration: underline;
 }
 
 .explicacao {
