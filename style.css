@@ -51,11 +51,10 @@ body {
     line-height: 40px;
     border-radius: 5px;
     background: #fff;
-    text-align: center;
+    text-align: justify;
     padding: 30px 20px;
     margin-bottom: 10px;
     background: linear-gradient(45deg, lightgreen, lightblue);
-    justify-content: center;
 }
 
 .container-topo .box-container-topo .box-topo:hover {
