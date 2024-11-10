@@ -41,7 +41,7 @@ body {
 .container-topo .box-container-topo {
     display: grid;
     grid-template-columns: repeat(3, minmax(100px, 1fr));
-    gap:15px;
+    gap:25px;
 }
 
 .container-topo .box-container-topo .box-topo {
