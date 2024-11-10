@@ -11,7 +11,7 @@ body {
 
 .box-texto {
     font: Poppins;
-    font-size: 24px;
+    font-size: 30px;
 }
 
 .barra {
@@ -33,7 +33,6 @@ body {
 
 .container-topo {
     display: flex;
-    background: linear-gradient(45deg, lightgreen, lightblue);
     border-radius: 10px;
     margin-top: 10px;
     background: rgba(255, 255, 255, 0);
@@ -72,7 +71,7 @@ body {
     text-align: justify;
     padding: 30px 20px;
     margin-bottom: 10px;
-    gray 15%;
+    background: linear-gradient(45deg, lightgreen, lightblue);
 }
 
 .container-topo .box-container-topo .box-topo {
