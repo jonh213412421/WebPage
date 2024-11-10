@@ -1,5 +1,5 @@
 body {
-    background: white;
+    background: gray 90%;
 }
 
 .box-titulo {
@@ -32,6 +32,7 @@ body {
 }
 
 .container-topo {
+    display: flex;
     border-radius: 10px;
     margin-top: 10px;
     background: rgba(255, 255, 255, 0);
@@ -40,8 +41,24 @@ body {
 
 .container-topo .box-container-topo {
     display: grid;
-    grid-template-columns: repeat(3, minmax(100px, 1fr));
     gap:25px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between; /* Distribui o espaço restante de forma equilibrada */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha em telas pequenas */
+    padding: 10px; /* Adiciona um pouco de espaçamento interno */
+}
+
+@media (max-width: 1024px) {
+    .container-topo .box-container-topo {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .container-topo .box-container-topo {
+        grid-template-columns: 1fr; /* 1 column on small screens */
+        gap: 15px;
+    }
 }
 
 .container-topo .box-container-topo .box-topo {
@@ -54,7 +71,7 @@ body {
     text-align: justify;
     padding: 30px 20px;
     margin-bottom: 10px;
-    background: linear-gradient(45deg, lightgreen, lightblue);
+    gray 15%;
 }
 
 .container-topo .box-container-topo .box-topo {
@@ -88,6 +105,18 @@ iframe {
     border-radius: 10px;
     box-shadow: 5px 5px 10px;
     background: linear-gradient(45deg, darkblue, lightblue);
+}
+
+@media (max-width: 1024px) {
+    .titulo_portfolio {
+            font-size: 50px;; /* 2 columns on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .titulo_portfolio {
+            font-size: 40px;; /* 2 columns on medium screens */
+    }
 }
 
 h2 {
@@ -127,6 +156,7 @@ iframe {
 }
 
 .container {
+    display: flex;
     margin-top: 10px;
     background: rgba(255, 255, 255, 0);
     padding:15px 9%;
@@ -161,4 +191,17 @@ iframe {
 .container .box-container .box .box-titulo:hover {
     opacity: 1 !important;
     color: #0a65c1;
+}
+
+@media (max-width: 1024px) {
+    .container .box-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .container .box-container {
+        grid-template-columns: 1fr; /* 1 column on small screens */
+        gap: 15px;
+    }
 }
