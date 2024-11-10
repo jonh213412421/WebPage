@@ -33,7 +33,6 @@ body {
     border-radius: 10px;
     margin-top: 10px;
     background: rgba(255, 255, 255, 0);
-    background: linear-gradient(45deg, darkblue, lightblue);
     padding:15px 9%;
 }
 
@@ -53,6 +52,7 @@ body {
     text-align: center;
     padding: 30px 20px;
     margin-bottom: 10px;
+    background: linear-gradient(45deg, lightgreen, lightblue);
     justify-content: center;
 }
 
@@ -118,7 +118,7 @@ h2 {
 }
 
 .espaco {
-    height: 20px;
+    height: 5px;
 }
 
 iframe {
@@ -128,7 +128,6 @@ iframe {
 .container {
     margin-top: 10px;
     background: rgba(255, 255, 255, 0);
-    background: linear-gradient(45deg, darkblue, lightblue);
     padding:15px 9%;
 }
 
@@ -144,6 +143,7 @@ iframe {
     background: #fff;
     text-align: center;
     padding: 30px 20px;
+    background: linear-gradient(45deg, lightgreen, lightblue);
     margin-bottom: 10px;
 }
 
