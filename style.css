@@ -1,5 +1,5 @@
 body {
-    background: gray 90%;
+    background: linear-gradient(to top, gray 90%, white);
 }
 
 .box-titulo {
@@ -42,6 +42,7 @@ body {
 .container-topo .box-container-topo {
     display: grid;
     gap:25px;
+    background: linear-gradient(45deg, lightgreen, lightblue);
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between; /* Distribui o espaço restante de forma equilibrada */
     flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha em telas pequenas */
