@@ -4,6 +4,7 @@ body {
 
 .box-titulo {
     font: Poppins;
+    font-weight: bold;
     font-size: 35px;
     font-align: center;
 }
