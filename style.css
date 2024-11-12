@@ -13,6 +13,13 @@
     background: rgb(161, 78, 37);
 }
 
+@media (max-width: 768px) {
+    #foto-profile {
+        margin-left: 15px;
+        margin-right: 10px;
+    }
+}
+
 #foto-linguagens {
     width: 500px;
     height: 500px;
@@ -26,6 +33,13 @@
 
 #foto-linguagens:hover {
     background: rgb(161, 78, 37, 0.6);
+}
+
+@media (max-width: 768px) {
+    #foto-linguagens {
+        margin-left: 15px;
+        margin-right: 10px;
+    }
 }
 
 #foto-python {
@@ -80,9 +94,16 @@
 }
 
 #texto-topo {
-    font-size: 35px;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 28px;
     text-align: justify;
-    margin-right: 450px;
+    margin-right: 250px;
+}
+
+@media (max-width: 768px) {
+    #texto-topo {
+        margin-right: 10px;
+    }
 }
 
 #itens {
