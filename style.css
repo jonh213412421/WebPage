@@ -9,6 +9,10 @@
     display: block;
 }
 
+#foto-profile:hover {
+    background: rgb(161, 78, 37);
+}
+
 #foto-linguagens {
     width: 500px;
     height: 500px;
@@ -18,6 +22,10 @@
     margin-left: 250px;
     margin-right: 100px;
     display: block;
+}
+
+#foto-linguagens:hover {
+    background: rgb(161, 78, 37, 0.6);
 }
 
 #foto-python {
@@ -34,7 +42,7 @@
 
 #foto-python:hover {
     opacity: 1;
-    background: lightyellow;
+    background: rgb(161, 78, 37, 0.6);
 }
 
 #foto-java {
@@ -51,7 +59,7 @@
 
 #foto-java:hover {
     opacity: 1;
-    background: lightyellow;
+    background: rgb(204, 107, 59, 0.6);
 }
 
 #olamundo, #linguagens, #itens {
@@ -100,6 +108,10 @@
 }
 
 #python-texto2 {
+    font-family: 'Tahoma', sans-serif;
+    background: linear-gradient(to top, rgb(204, 107, 59), rgb(161, 78, 37));
+    -webkit-background-clip: text;
+    color: transparent;
     margin-top: 10px;
     font-size: 45px;
     text-align: center;
@@ -108,12 +120,16 @@
 .python-texto3 {
     font-family: 'Tahoma', sans-serif;
     margin-top: 15px;
-    font-size: 35px;
+    font-size: 28px;
     margin-left: 35px;
     text-align: center;
 }
 
 #java-texto {
+    font-family: 'Tahoma', sans-serif;
+    background: linear-gradient(to top, rgb(204, 107, 59), rgb(161, 78, 37));
+    -webkit-background-clip: text;
+    color: transparent;
     margin-top: 10px;
     font-size: 45px;
     text-align: center;
@@ -163,7 +179,7 @@
 
 .item-baixo:hover {
     opacity: 1;
-    background: lightyellow;
+    background: rgb(161, 78, 37, 0.6);
 }
 
 #container-baixo-java {
