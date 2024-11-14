@@ -7,10 +7,7 @@
     margin-left: 150px;
     margin-right: 100px;
     display: block;
-}
-
-#foto-profile:hover {
-    background: rgb(161, 78, 37);
+    background: rgb(161, 78, 37, 0.6);
 }
 
 @media (max-width: 768px) {
@@ -30,9 +27,6 @@
     margin-left: 150px;
     margin-right: 100px;
     display: block;
-}
-
-#foto-linguagens:hover {
     background: rgb(161, 78, 37, 0.6);
 }
 
@@ -98,10 +92,15 @@
     font-family: 'Tahoma', sans-serif;
     font-size: 30px;
     text-align: justify;
-    margin-right: 600px;
 }
 
 @media (max-width: 768px) {
+    #texto-topo {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
     #texto-topo {
         margin-right: 10px;
     }
@@ -111,8 +110,9 @@
     font-size: 35px;
     text-align: left;
 }
-
+/* colocar em uma div */
 #repositorios {
+    min-width: 1600px;
     font-family: 'Tahoma', sans-serif;
     margin-top: 40px;
     font-size: 60px;
@@ -121,6 +121,20 @@
     background: linear-gradient(to top, rgb(204, 107, 59), rgb(161, 78, 37));
     -webkit-background-clip: text;
     color: transparent;
+}
+
+@media (max-width: 768px) {
+    #repositorios {
+        text-align: left;
+        min-width: 768px;
+    }
+}
+
+@media (max-width: 480px) {
+    #repositorios {
+        text-align: left;
+        min-width: 768px;
+    }
 }
 
 #python-texto {
@@ -157,11 +171,25 @@
 }
 
 .container {
+    min-width: 1600px;
     display: flex;
+    margin-right: 30px;
 }
 
 @media (max-width: 768px) {
     .container {
+        min-width: 580px;
+        margin-right: 0px;
+        margin-left: 10px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        min-width: 320px;
+        margin-right: 0px;
+        margin-left: 10px;
         flex-wrap: wrap;
     }
 }
@@ -173,16 +201,28 @@
 }
 
 .container2 {
+    min-width: 1600px;
     border: solid rgb(161, 78, 37, 0.6);
-    margin-right: 350px;
     margin-left: 350px;
+    margin-top: 30px;
+    margin-right: 350px;
     display: flex;
     gap: 25px;
     flex-wrap: wrap;
 }
 
+
 @media (max-width: 768px) {
     .container2 {
+        min-width: 580px;
+        margin-right: 0px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container2 {
+        min-width: 320px;
         margin-right: 0px;
         margin-left: 10px;
         border: solid rgb(0, 0, 0, 0);
@@ -214,18 +254,6 @@
     background: rgb(161, 78, 37, 0.6);
 }
 
-#container-baixo-java {
-    border: solid rgb(161, 78, 37, 0.6);
-    margin-top: 30px;
-    height: 400px;
-}
-
-@media (max-width: 768px) {
-    #container-baixo-java {
-        margin-left: 10px;
-        border: solid rgb(0, 0, 0, 0);
-    }
-}
 
 @media (max-width: 768px) {
     container {
