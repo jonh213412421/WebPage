@@ -46,12 +46,6 @@
     margin-left: 150px;
     margin-right: 150px;
     display: block;
-    opacity: 0.75;
-}
-
-#foto-python:hover {
-    opacity: 1;
-    background: rgb(161, 78, 37, 0.6);
 }
 
 #foto-java {
@@ -63,12 +57,6 @@
     margin-left: 150px;
     margin-right: 150px;
     display: block;
-    opacity: 0.75;
-}
-
-#foto-java:hover {
-    opacity: 1;
-    background: rgb(204, 107, 59, 0.6);
 }
 
 #olamundo, #linguagens, #itens {
@@ -90,19 +78,22 @@
 
 #texto-topo {
     font-family: 'Tahoma', sans-serif;
+    margin-top: 30px;
     font-size: 30px;
     text-align: justify;
 }
 
 @media (max-width: 768px) {
     #texto-topo {
-        margin-right: 10px;
+        margin-right: 0px;
+        margin-left: 10px;
     }
 }
 
 @media (max-width: 480px) {
     #texto-topo {
-        margin-right: 10px;
+        margin-right: 0px;
+        margin-left: 10px;
     }
 }
 
@@ -110,11 +101,15 @@
     font-size: 35px;
     text-align: left;
 }
-/* colocar em uma div */
+
+
 #repositorios {
     min-width: 1600px;
+    max-width: 1920px;
     font-family: 'Tahoma', sans-serif;
-    margin-top: 40px;
+    margin-left: 350px;
+    margin-top: 30px;
+    margin-right: 350px;
     font-size: 60px;
     text-align: center;
     margin-bottom: 100px;
@@ -125,15 +120,17 @@
 
 @media (max-width: 768px) {
     #repositorios {
-        text-align: left;
-        min-width: 768px;
+    min-width: 580px;
+    margin-right: 0px;
+    margin-left: 10px;
     }
 }
 
 @media (max-width: 480px) {
     #repositorios {
-        text-align: left;
-        min-width: 768px;
+    min-width: 320px;
+    margin-right: 0px;
+    margin-left: 10px;
     }
 }
 
@@ -173,6 +170,7 @@
 .container {
     min-width: 1600px;
     max-width: 1920px;
+    margin-right: 350px;
     display: flex;
 }
 
@@ -194,7 +192,6 @@
     }
 }
 
-
 .container .caixa {
     background: #fff;
     text-align: center;
@@ -202,6 +199,7 @@
 
 .container2 {
     min-width: 1600px;
+    max-width: 1920px;
     border: solid rgb(161, 78, 37, 0.6);
     margin-left: 350px;
     margin-top: 30px;
