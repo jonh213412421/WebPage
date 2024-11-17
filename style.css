@@ -252,9 +252,38 @@
     background: rgb(161, 78, 37, 0.6);
 }
 
+.container3 {
+    min-width: 1600px;
+    max-width: 1920px;
+    margin-left: 350px;
+    margin-top: 30px;
+    margin-right: 350px;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
 
 @media (max-width: 768px) {
-    container {
-        flex-direction: column;
+    .container3 {
+        min-width: 580px;
+        margin-right: 0px;
+        margin-left: 10px;
     }
+}
+
+@media (max-width: 480px) {
+    .container3 {
+        min-width: 320px;
+        margin-right: 0px;
+        margin-left: 10px;
+    }
+}
+
+#creditos {
+    font-family: 'Tahoma', sans-serif;
+    color: rgb(204, 107, 59);
+    margin-top: 30px;
+    font-size: 23px;
+    text-align: left;
 }
