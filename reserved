@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Iframe</title>
+</head>
+<body>
+    <h1>Bem-vindo à minha página com um Iframe!</h1>
+    <p>Abaixo está um iframe com o conteúdo de outra página:</p>
+
+    <!-- Iframe com uma URL externa -->
+    <iframe src="https://4abf-2804-d45-bf23-c700-dd9f-f02-668d-1c76.ngrok-free.app/url-page?target_url=https://www.google.com" width="800" height="600" title="Página Externa">
+        Seu navegador não suporta iframes.
+    </iframe>
+</body>
+</html>
