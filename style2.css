@@ -1,0 +1,32 @@
+#tela {
+    margin-top: 50px;
+    height: 800px;
+    width: 1024px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    font-family: 'Tahoma', sans-serif;
+    font-size: 30px;
+}
+
+#botao-div {
+    margin-left: 250px;
+}
+
+.botao {
+    font-family: 'Tahoma', sans-serif;
+    font-size: 22px;
+}
+
+#login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.campo-preenchimento {
+    font-size: 30px;
+}
