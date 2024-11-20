@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" xmlns="http://www.w3.org/1999/html">
 <link href="style2.css" rel="stylesheet" type="text/css">
 <head>
     <meta charset="UTF-8">
@@ -8,32 +8,47 @@
     <script>
         // Função para validar a senha
         function verificarSenha() {
+            var user = document.getElementById('user').value; // Obtém o valor digitado
             var senha = document.getElementById('senha').value; // Obtém o valor digitado
-            var senhaCorreta = '123321'; // Defina a senha desejada
+            var userCorreto = 'joaobajur'; // Defina a senha desejada
+            var senhaCorreta = 'a=123321'; // Defina a senha desejada
 
-            if (senha === senhaCorreta) {
+            if (senha === senhaCorreta && user === userCorreto) {
                 // Se a senha estiver correta, mostra a página
                 document.getElementById('pagina-secreta').style.display = 'block';
-                document.getElementById('senha-form').style.display = 'none';
+                document.getElementById('tela').style.display = 'block';
+                document.getElementById('login-form').style.display = 'none';
             } else {
-                // Senha incorreta
-                alert('Senha incorreta!');
+                alert('Senha ou usuário incorretos!');
             }
+        }
+        function iframechanger() {
+            var url = document.getElementById('url-campo').value;
+            document.getElementById('tela').src = url;
         }
     </script>
 </head>
 <body>
-    <h1>Bem-vindo à página protegida</h1>
-
-    <div id="senha-form">
-        <label for="senha">Digite a senha:</label>
-        <input type="password" id="senha">
-        <button onclick="verificarSenha()">Entrar</button>
-    </div>
-
+    <fieldset id="login-form">
+        <div>
+            <h1>Área Reservada</h1>
+            <label for="usuario" id="input-user">Digite o usuário:</label>
+            <input type="usuario" id="user" class="campo-preenchimento"><br><br>
+            <label for="password" id="input">Digite a senha:</label>
+            <input type="password" id="senha" class="campo-preenchimento"><br><br>
+            <div id="botao-div">
+                <button onclick="verificarSenha()" class="botao">Entrar</button>
+            </div>
+        </div>
+    </fieldset>
     <div id="pagina-secreta" style="display:none;">
-        <h2>Conteúdo protegido</h2>
-        <p>Você acessou uma página secreta!</p>
+        <h2>Acesso Remoto</h2>
+        <label for="url" id="campo-url">Digite a URL:</label>
+        <input type="url" id="url-campo" class="campo-preenchimento">
+        <button onclick="iframechanger()" class="botao">Ir</button>
+    </div>
+    <div id="div-iframe">
+        <iframe src="" id="tela" style="display:none"></iframe>
     </div>
 </body>
 </html>
