@@ -30,3 +30,14 @@ body {
 .campo-preenchimento {
     font-size: 30px;
 }
+
+#div-iframe {
+    display: flex;
+    gap: 40px;
+}
+
+#notepad {
+    margin-top: 50px;
+    height: 400px;
+    width: 500px;
+}
