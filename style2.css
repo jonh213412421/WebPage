@@ -2,7 +2,6 @@
     margin-top: 50px;
     height: 800px;
     width: 1024px;
-    display: flex;
     font-size: 24px;
     justify-content: center;
     align-items: center;
@@ -42,7 +41,7 @@ body {
     width: 0.5;
 }
 
-#pagina-secreta {
+#painel {
     background-color: white;
     opacity: 0.8;
 }
@@ -54,6 +53,10 @@ body {
 #div-iframe {
     display: flex;
     gap: 40px;
+}
+
+.container {
+    flex-wrap: wrap;
 }
 
 #notepad {
