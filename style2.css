@@ -10,23 +10,22 @@
 }
 
 body {
+    display: flex;
     font-family: 'Tahoma', sans-serif;
     font-size: 30px;
     background-image: url('assets/seguranca-digital.jpg');
     background-size: cover;
+    justify-content: center;
+    align-items: center;
 }
 
 #acesso remoto {
     font-size: 30px;
 }
 
-#botao-div {
-    margin-left: 250px;
-}
-
 .botao {
     font-family: 'Tahoma', sans-serif;
-    font-size: 22px;
+    font-size: 28px;
 }
 
 #login-form {
@@ -35,6 +34,12 @@ body {
     align-items: center;
     background-color: white;
     opacity: 0.8;
+    width: 50%;
+    text-align: center;
+}
+
+#login-form-div {
+    width: 0.5;
 }
 
 #pagina-secreta {
