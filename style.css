@@ -48,6 +48,17 @@
     display: block;
 }
 
+#foto-Cpp {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    margin-left: 150px;
+    margin-right: 150px;
+    display: block;
+}
+
 #foto-java {
     width: 150px;
     height: 150px;
@@ -149,6 +160,15 @@
     text-align: center;
 }
 
+#C-texto {
+    font-family: 'Tahoma', sans-serif;
+    background: linear-gradient(to top, rgb(204, 107, 59), rgb(161, 78, 37));
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 45px;
+    text-align: center;
+}
+
 .python-texto3 {
     font-family: 'Tahoma', sans-serif;
     margin-top: 15px;
@@ -213,6 +233,9 @@
     min-height: 350px;
 }
 
+#container-baixo-C {
+    min-height: 350px;
+}
 
 @media (max-width: 768px) {
     .container2 {
