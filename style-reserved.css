@@ -1,7 +1,7 @@
 #tela {
     margin-top: 50px;
-    height: 800px;
-    width: 1024px;
+    min-height: 800px;
+    min-width: 1024px;
     font-size: 24px;
     justify-content: center;
     align-items: center;
