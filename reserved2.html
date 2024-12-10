@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Page Code</title>
+    <script>
+        function fetchPageCode() {
+            const url = document.getElementById("urlInput").value;  // Get the URL from the input field
+            const outputDiv = document.getElementById("output");  // Div to display the response
+            
+            // Clear previous output
+            outputDiv.innerHTML = "Loading...";
+
+            // Validate if the URL starts with http(s)
+            if (!url.startsWith('http://') && !url.startsWith('https://')) {
+                outputDiv.innerHTML = "Please enter a valid URL starting with http:// or https://";
+                return;
+            }
+
+            // Fetch the page content
+            fetch(url)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.text();  // Parse response as text (HTML content)
+                })
+                .then(data => {
+                    // Display the fetched page HTML in the output div
+                    outputDiv.innerHTML = "<pre>" + data + "</pre>";
+                })
+                .catch(error => {
+                    // If there is an error (e.g., network error, invalid URL)
+                    outputDiv.innerHTML = "Error fetching the page: " + error.message;
+                });
+        }
+    </script>
+</head>
+<body>
+    <h1>Fetch Page Code</h1>
+    <label for="urlInput">Enter URL:</label>
+    <input type="text" id="urlInput" placeholder="https://example.com">
+    <button onclick="fetchPageCode()">Fetch</button>
+
+    <h3>Fetched Page Code:</h3>
+    <div id="output" style="white-space: pre-wrap; word-wrap: break-word;"></div>
+</body>
+</html>
